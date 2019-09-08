@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Ottergram </title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
-  <body>
-    <header>
-      <h1> Ottergram </h1>
-    </header>
-    <ul>
-      <li>
+
+<head>
+  <meta charset="utf-8">
+  <title>ottergram</title>
+  <!--rel = relationship, what the attached source actually does
+   in this case, it styles the information.
+   it's important to have the normalize.css come before our css stylesheet-
+   href = the source of where its referencing from-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+  <!-- this creates the little icon in the browser tab -->
+  <link rel="shortcut icon" href="/favicon.ico?v1" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico?v1" type="image/x-icon">
+</head>
+
+<body>
+  <header class="main-header">
+    <h1 class="logo-text">Ottergram</h1>
+  </header>
+  <main class="main-content">
+    <ul class="thumbnail-list">
+      <li class="thumbnail-item">
+        <!-- <a> tag is an anchor tag, usually used to direct you to a different page
+      but if we don't want it to do anything, we give it a dummy value
+      such as "#" -->
         <a href="#">
-          <img src="img/otter1.jpg" alt="Barry the Otter">
-          <span>Barry</span>
+          <img class="thumbnail-image" src="img/otter1.jpg" alt="Barry the Otter">
+          <span class="thumbnail-title">Barry</span>
         </a>
       </li>
-      <li>
+      <li class="thumbnail-item">
         <a href="#">
-          <img src="img/otter2.jpg" alt="had the Otter">
-          <span>had</span>
+          <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
+          <span class="thumbnail-title">Robin</span>
         </a>
       </li>
-      <li>
+      <li class="thumbnail-item">
         <a href="#">
-          <img src="img/otter3.jpg" alt="a the Otter">
-          <span>Trigger</span>
+          <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
+          <span class="thumbnail-title">Maurice</span>
         </a>
       </li>
-      <li>
+      <li class="thumbnail-item">
         <a href="#">
-          <img src="img/otter4.jpg" alt="little the Otter">
-          <span>little</span>
+          <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
+          <span class="thumbnail-title">Lesley</span>
         </a>
       </li>
-      <li>
+      <li class="thumbnail-item">
         <a href="#">
-          <img src="img/otter5.jpg" alt="lamb the Otter">
-          <span>lamb</span>
+          <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
+          <span class="thumbnail-title">Barbara</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter1.jpg" alt="Barry the Otter">
+          <span class="thumbnail-title">Barry</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
+          <span class="thumbnail-title">Robin</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
+          <span class="thumbnail-title">Maurice</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
+          <span class="thumbnail-title">Lesley</span>
+        </a>
+      </li>
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
+          <span class="thumbnail-title">Barbara</span>
         </a>
       </li>
     </ul>
-  </body>
+
+  <!-- <div> is a generic container for content -->
+    <div class="detail-image-container">
+      <div class="detail-image-frame">
+        <img class="detail-image" src="img/otter1.jpg" alt="">
+        <span class="detail-image-title">Stayin' Alive</span>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
