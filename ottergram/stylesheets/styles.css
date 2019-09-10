@@ -4,7 +4,7 @@
   font-weight: normal;
   src: url("fonts/LAKESHOR-webfont.eot");
   src: url("fonts/LAKESHOR-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fronts/LAKESHOR-webfont.woff") format("woff"),
+    url("fonts/LAKESHOR-webfont.woff") format("woff"),
     url("fonts/LAKESHOR-webfont.ttf") format("truetype"),
     url("fonts/LAKESHOR-webfont.svg#lakeshore") format("svg");
 }
@@ -76,7 +76,6 @@ a[href="#"] {
   display: inline-block;
   max-width: 120px;
   min-width: 120px;
-  width: 120px;
 }
 
 .thumbnail-list {
